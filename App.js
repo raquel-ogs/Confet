@@ -1,16 +1,21 @@
 
 import { StyleSheet, Text, View, FlatList } from "react-native";
 import Cabecalho from "./src/components/cabecalho";
+import Banner from "./src/components/banner";
 import Titulo from "./src/components/titulo";
 import Produtos from "./src/components/produtos";
 import DadosProdutos from "./dados/dadosProdutos"; 
 import Lancamentos from "./src/components/lancamentos";
 import DadosLancamentos from "./dados/dadosLancamentos"; 
+import Rodape from "./src/components/rodape";
 
 export default function App() {
   return (
-    <View style={{backgroundColor:'#D3D3D3', flex:1}}>
+    <View style={{ flex:1}}>
       <Cabecalho></Cabecalho>
+      <View>
+        <Banner> </Banner>
+      </View>
       <View>
         <Titulo
           titulo =  "OS MAIS VENDIDOS"
@@ -50,6 +55,9 @@ export default function App() {
           )}
         />
         </View>
+      <View style={{backgroundColor: "transparent"}}>
+        <Rodape></Rodape>
+      </View>
       </View>
   );
 }
