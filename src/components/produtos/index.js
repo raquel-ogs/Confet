@@ -1,8 +1,19 @@
 import React from "react";
-import { View, TouchableOpacity, StyleSheet, Text, Image} from "react-native";
+import {View, TouchableOpacity, StyleSheet, Text, Image} from "react-native";
+import AppLoading from 'expo-app-loading';
+import { useFonts, PatrickHand_400Regular } from '@expo-google-fonts/patrick-hand'; 
 
 export default function Produtos ({ titulo, preco, imagem}){
+
+    let [fontsLoaded] = useFonts({
+        PatrickHand_400Regular,
+      });
+    
+      if (!fontsLoaded) {
+        return <AppLoading />;
+      }
     return(
+        
         <TouchableOpacity style={estilo.containerProdutos}>
             <Image
                 style={estilo.images}
@@ -14,7 +25,7 @@ export default function Produtos ({ titulo, preco, imagem}){
 
     );
 }
-
+           
 const estilo = StyleSheet.create({
     containerProdutos: {
         backgroundColor: "#FFDC8D",
@@ -22,24 +33,26 @@ const estilo = StyleSheet.create({
         marginTop: 10,
         padding: 10,
         margin:0,
-        justifyContent: "space-between",
+        justifyContent: "center",
+        flex: 1,
         width: 180,
-        height: 200,
+        height: 250,
         marginLeft: 8,
         marginHorizontal:10,
 
     },
     titulo: {
-        color: "5C281F",
-        fontSize: 14,
-        fontFamily: "Agrandir-Tight",
+        color: "#8F4E18",
+        fontSize: 18,
+        fontFamily: "PatrickHand_400Regular",
         fontWeight: "bold",
         textAlign: "center", 
     },
     preco: {
-        color: "#5C281F",
-        fontSize: 18,
-        marginLeft: 60,
+        color: "#8F4E18",
+        fontSize: 24,
+        fontFamily: "PatrickHand_400Regular",
+        marginLeft: 80,
         marginTop: 2,
         fontWeight: "bold",
     },

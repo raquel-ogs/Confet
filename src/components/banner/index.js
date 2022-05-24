@@ -14,7 +14,7 @@ export default function Banner(){
 const estilo = StyleSheet.create({
     banner: {
         width: "100%",
-        height: 350,
+        height: "25vh",
         marginTop: -25,
 
 

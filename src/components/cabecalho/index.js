@@ -22,7 +22,6 @@ const estilo = StyleSheet.create({
     header:{
         backgroundColor:'#FFACAC',
         borderRadius:2,
-        marginTop:8,
         width:'99,9%',
         padding:20,
         margin:2,
