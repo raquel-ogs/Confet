@@ -5,7 +5,7 @@ export default function Banner(){
     return(
         <View>
             <Image
-            style={estilo.banner} source= {require('../../img/banner2.png')}
+            style={estilo.banner} source= {require('../../img/banner3.png')}
             />
         </View>
     );
@@ -13,7 +13,7 @@ export default function Banner(){
 
 const estilo = StyleSheet.create({
     banner: {
-        width: "100%",
+        width: "100",
         height: "25vh",
         marginTop: -25,
 

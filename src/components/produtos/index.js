@@ -19,7 +19,7 @@ export default function Produtos ({ titulo, preco, imagem}){
                 style={estilo.images}
                 source={require(`../../img/${imagem}`)}
                 />
-                <Text style={estilo.titulo}>{titulo}</Text>
+                <Text style={estilo.titulo}>{titulo}</Text>                
                 <Text style={estilo.preco}>{preco}</Text>
         </TouchableOpacity>
 
@@ -43,14 +43,14 @@ const estilo = StyleSheet.create({
     },
     titulo: {
         color: "#8F4E18",
-        fontSize: 18,
+        fontSize: 20,
         fontFamily: "PatrickHand_400Regular",
         fontWeight: "bold",
         textAlign: "center", 
     },
     preco: {
         color: "#8F4E18",
-        fontSize: 24,
+        fontSize: 25,
         fontFamily: "PatrickHand_400Regular",
         marginLeft: 80,
         marginTop: 2,

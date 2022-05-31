@@ -49,6 +49,8 @@ export default function App() {
           
           <Lancamentos
           titulo ={item.nome}
+          subtitulo ={item.subtitulo}
+          desc = {item.desc}
           imagem = {item.imagem}
           />
           
