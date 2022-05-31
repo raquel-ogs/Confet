@@ -13,6 +13,7 @@
     "@expo-google-fonts/pacifico": "^0.2.2",
     "@expo-google-fonts/patrick-hand": "^0.2.2",
     "@expo-google-fonts/poppins": "^0.2.2",
+    "@expo-google-fonts/sacramento": "^0.2.2",
     "@wecraftapps/react-native-simple-carousel": "^0.3.0",
     "expo": "^45.0.4",
     "expo-app-loading": "~2.0.0",

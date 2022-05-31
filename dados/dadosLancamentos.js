@@ -2,7 +2,7 @@ const Lancamentos = [
         {
             id : "01",
             desc: "",
-            nome : "BOMBA DE CHOCOLATE",
+            nome : "Bomba de Chocolate",
             imagem : 'bomba.png'
         },
     
