@@ -1,12 +1,12 @@
 import React from "react";
-import {View, TouchableOpacity, StyleSheet, Text, Image} from "react-native";
+import {TouchableOpacity, StyleSheet, Text, Image} from "react-native";
 import AppLoading from 'expo-app-loading';
-import { useFonts, PatrickHand_400Regular } from '@expo-google-fonts/patrick-hand'; 
+import { useFonts } from 'expo-font'; 
 
 export default function Produtos ({ titulo, preco, imagem}){
 
     let [fontsLoaded] = useFonts({
-        PatrickHand_400Regular,
+        'Sailors': require('./../../fonts/Sailors.otf'),
       });
     
       if (!fontsLoaded) {
@@ -43,17 +43,16 @@ const estilo = StyleSheet.create({
     },
     titulo: {
         color: "#8F4E18",
-        fontSize: 20,
-        fontFamily: "PatrickHand_400Regular",
-        fontWeight: "bold",
+        fontSize: 17,
+        fontFamily: "Sailors",
         textAlign: "center", 
     },
     preco: {
         color: "#8F4E18",
-        fontSize: 25,
-        fontFamily: "PatrickHand_400Regular",
+        fontSize: 21,
+        fontFamily: "Sailors",
         marginLeft: 80,
-        marginTop: 2,
+        marginTop: 10,
         fontWeight: "bold",
     },
     images: {

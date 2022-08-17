@@ -1,26 +1,9 @@
 import React from 'react';
-import {View,Image,StyleSheet} from 'react-native';
+import {ImageBackground} from 'react-native';
 
-export default function Cabecalho(){
+export default function Rodape(){
 return(
     
-    <View>
-        <Image
-                style={estilo.img}
-                source={require(`../../img/rodape.png`)}
-                />
-    </View>
-
+    <ImageBackground source={require('./../../img/rodape.png')} style={{width:'100%', height: 300, marginTop: '-18vh', padding:20,}}/>
 );
 }
-const estilo = StyleSheet.create({
-    img:{
-        borderRadius:2,
-        width:'100%',
-        height: 300,
-        marginTop: 55,
-        padding:20,
-
-    }
-
-})

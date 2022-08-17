@@ -12,30 +12,18 @@ export default function Titulo ({ titulo }){
         return <AppLoading />;
       }
     return(
-        <TouchableOpacity style={estilo.containerTitulo}>    
-                <Text style={estilo.titulo}>{titulo}</Text>
-        </TouchableOpacity>
+            <Text style={estilo.titulo}>{titulo}</Text>
 
     );
 }
 
 const estilo = StyleSheet.create({
-    containerLancamentos: {
-        borderRadius: 10,
-        marginTop: 8,
-        padding: 10,
-        margin: 2,
-        justifyContent: "space-between",
-        height: 280,
-        marginLeft: 5,
-        marginHorizontal:10,
-
-    },
     titulo: {
         color: "#FAA596",
         fontSize: 25,
-        fontFamily: 'Poppins_400Regular',
-        margin: 10,
+        fontFamily: 'Agrandir-Thin',
+        paddingLeft: 10,
+        marginTop: 25,
         textAlign: "left",
     }
 
